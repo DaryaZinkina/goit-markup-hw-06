@@ -797,6 +797,9 @@ p {
   /* or 150% */
   color: var(--color-cloud);
   background-color: #4d5ae5;
+
+  transform: translateY(100%);
+
   height: 100%;
   width: 100%;
 
@@ -823,7 +826,7 @@ p {
 }
 .href-link:hover .overlay-text,
 .href-link:focus .overlay-text {
-  transform: translateY(100%);
+  transform: translateY(0%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text {
@@ -994,4 +997,14 @@ form {
 }
 .sub-foot-label {
   color: #ffffff;
+}
+.sub-form {
+  padding-left: 80px;
+}
+.form-field::placeholder {
+  border-color: var(--color-iris);
+}
+.form-icon:focus .form-field,
+.form-icon:hover .form-field {
+  fill: var(--color-iris);
 }
